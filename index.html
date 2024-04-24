@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>May Vitelson</title>
   <!-- <link rel="stylesheet" href="dist/css/main_0002.css" name="sass-main" /> -->
-  <link rel="stylesheet" href="dist/css/main.css"/>
+  <link rel="stylesheet" href="dist/css/main.css" />
 </head>
 
 <body data-bg="#ffc0cb">
@@ -21,9 +21,7 @@
         <div class="chevrons-container">
           <span class="chevron-icon a">
             <?xml version=" 1.0" encoding="iso-8859-1" ?>
-            <svg class="svg-a" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-              style="enable-background: new 0 0 512 512" xml:space="preserve">
+            <svg class="svg-a" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
               <g>
                 <g>
                   <path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0
@@ -50,9 +48,7 @@
           </span>
           <span class="chevron-icon b">
             <?xml version="1.0" encoding="iso-8859-1"?>
-            <svg version="1.1" id="Layer_1" class="svg-b" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-              style="enable-background: new 0 0 512 512" xml:space="preserve">
+            <svg version="1.1" id="Layer_1" class="svg-b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
               <g>
                 <g>
                   <path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0
@@ -86,21 +82,25 @@
     <section class="menu-options-wrapper container">
       <article class="menu-options" data-bg="#ffc0cb" data-fcolor="black">
         <hr />
-        <a href="./index.html" class="current-page">
+        <a id="homeSection" class="current-page" onclick="goToHome()">
           <h4>Home</h4>
         </a>
-        <a href="./about.html">
-          <h4>About</h4>
-        </a>
-        <a onclick="goToProjects()">
+        <a id="projectsSection" onclick="goToProjects()">
           <h4>Projects</h4>
         </a>
+        <a id="aboutPage" href="./about.html">
+          <h4>About</h4>
+        </a>
         <hr />
-		<a href="https://www.linkedin.com/in/may-vitelson-50b11172/" class="contact-menu-item" target="_blank">
-					<h4>LinkedIn</h4>
-				</a>
- <a href="mailto:mayvitelson@gmail.com" ondblclick="event.returnValue = true;" onlick="preventDefault()" class="contact-menu-item"><h4 class="gmail">Email</h4></a>
- <a  href="tel:0549407589"  class="contact-menu-item" ondblclick="event.returnValue = true;" onlick="preventDefault()"><h4 class="phone" >Call Me </h4></a>
+        <a href="https://www.linkedin.com/in/may-vitelson-50b11172/" class="contact-menu-item" target="_blank">
+          <h4>LinkedIn</h4>
+        </a>
+        <a href="mailto:mayvitelson@gmail.com" ondblclick="event.returnValue = true;" onlick="preventDefault()" class="contact-menu-item">
+          <h4 class="gmail">Email</h4>
+        </a>
+        <a href="tel:0549407589" class="contact-menu-item" ondblclick="event.returnValue = true;" onlick="preventDefault()">
+          <h4 class="phone">Call Me </h4>
+        </a>
       </article>
     </section>
     <section class="intro">
@@ -119,8 +119,7 @@
               <span class="contact-item"> <a href="mailto:mayvitelson@gmail.com" target="_blank">Email</a>
               </span>
               <span class="contact-item"><a href="tel:0549407589" target="_blank">Phone Number</a></span>
-              <span class="contact-item"> <a href="https://www.linkedin.com/in/may-vitelson-50b11172/"
-                  target="_blank">LinkedIn</a>
+              <span class="contact-item"> <a href="https://www.linkedin.com/in/may-vitelson-50b11172/" target="_blank">LinkedIn</a>
               </span>
             </div>
           </div>
@@ -128,9 +127,8 @@
         <div class="scrollToProjectsArrow">
           <h1>Scroll down to see some of my work</h1>
           <?xml version=" 1.0" encoding="iso-8859-1" ?>
-          <svg height="100px" class="scroll-down-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-            style="enable-background: new 0 0 512 512" xml:space="preserve">
+          <svg height="100px" class="scroll-down-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
+            xml:space="preserve">
             <g>
               <g>
                 <path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0
@@ -183,11 +181,9 @@
           </div>
           <div class="double-image">
             <img src="./assets/img//tempe/screen-shots-pocaphone/tempe-daymode-mobile-cropped.jpg" class="left-img" />
-            <img src="./assets/img//tempe/screen-shots-pocaphone/tempe-nightmode-mobile-cropped2.jpg"
-              class="right-img" />
+            <img src="./assets/img//tempe/screen-shots-pocaphone/tempe-nightmode-mobile-cropped2.jpg" class="right-img" />
           </div>
-          <div class="single-image"> <img class="icon-pallette-svg" src="./assets/img/tempe/icons-pallette.svg"
-              style="object-fit: fill; " />
+          <div class="single-image"> <img class="icon-pallette-svg" src="./assets/img/tempe/icons-pallette.svg" style="object-fit: fill; " />
           </div>
           <!-- <div class="assets">
             <div class="left">
@@ -221,17 +217,17 @@
           <div class="double-image">
             <img src="./assets/img/peimot/peimot-protfolio -02.jpg" class="left-img" />
             <img src="./assets/img/peimot/peimot-protfolio -03.jpg" class="right-img" />
-            
+
           </div>
-                    <div class="double-image">
+          <div class="double-image">
             <img src="./assets/img/peimot/mobile_01.png" class="left-img" />
             <img src="./assets/img/peimot/mobile_02.png" class="right-img" />
           </div>
-                              <div class="double-image">
+          <div class="double-image">
             <img src="./assets/img/peimot/mobile_03.png" class="left-img" />
             <img src="./assets/img/peimot/mobile_04.png" class="right-img" />
           </div>
-          
+
         </div>
       </article>
       <article data-bg="#25336d" data-fcolor="#fff" class="clinic single-work">
@@ -263,8 +259,7 @@
           <div class="right">
             <p class="p-style"> This illustration of mine was drawn during my Visual Communication Design studies at
               Minshar (College Of Art & Design) as a part of an illustration course. Luckily it has been chosen for
-              being the cover image of an article published at <br> <span
-                style="font-weight: bold; font-style: italic;">The Liberal magazine </span>(Printed Edition). </p>
+              being the cover image of an article published at <br> <span style="font-weight: bold; font-style: italic;">The Liberal magazine </span>(Printed Edition). </p>
           </div>
         </div>
         <div class="gallery">
@@ -330,7 +325,7 @@
   </main>
   <!-- <script src="./js/index-modules.js" type="module"></script> -->
   <!-- <script nomodule src="./js/index.js"></script> -->
-  <script  src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 
 </body>
 

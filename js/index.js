@@ -1,4 +1,6 @@
+
 class StyleSheet {
+
 	constructor(name = 'dynamic-styleSheet') {
 		this.styleSheet = this.getStyleSheet(name);
 	}
@@ -44,6 +46,11 @@ const menuOptions = document.querySelector('.menu-options');
 const menuAtagLinks = document.querySelectorAll('.menu-options-wrapper > a > h4');
 const hrArray = document.querySelectorAll('.menu-options-wrapper > hr');
 
+const projectsSection = document.getElementById("projectsSection");
+const homeSection = document.getElementById("homeSection");
+
+
+
 const hexToRGB = (h) => {
 	if (!h) return;
 	let r = 0,
@@ -69,17 +76,6 @@ const hexToRGB = (h) => {
 const detectMob = () => {
 	return window.innerWidth <= 580 && window.innerHeight <= 900;
 };
-
-let isMobile = detectMob();
-
-const goToProjects = () => {
-	const destination = isMobile ? 500 : 600;
-	console.log(destination);
-	window.scrollTo(0, destination);
-	menuOptionsContainer.classList.remove('open');
-};
-
-window.goToProjects = goToProjects;
 
 const elementInViewport = (el) => {
 	let x;
@@ -148,7 +144,6 @@ const adjustScrollBarColor = (backgroundColor) => {
 		document.styleSheets[1].deleteRule(1);
 	}
 	const durationA = performance.now() - startTime;
-	console.log(`duration untill before insert rule took ${durationA}ms`);
 	document.styleSheets[1].insertRule(
 		`	::-webkit-scrollbar-thumb{
 			background-color:${scrollColor}!important;
@@ -156,7 +151,7 @@ const adjustScrollBarColor = (backgroundColor) => {
 		1
 	);
 	const duration = performance.now() - durationA;
-	console.log(`duration of insertRule took ${duration}ms`);
+
 };
 
 const setBgColor = (el, backgroundColor) => {
@@ -177,14 +172,14 @@ const setFillColor = (el, fontColor) => {
 
 const adjustPageColorsToFitCurrentElement = (el) => {
 	let backgroundColor = el.dataset.bg;
-	if (window.pageYOffset <= 100) backgroundColor = 'pink';
+	if (window.YOffset <= 100) backgroundColor = 'pink';
 	// if (window.pageYOffset >= 100) backgroundColor = el.dataset.bg;
 	// else if (window.pageYOffset <= 100)
 	// 	document.body.setAttribute('style', 'background-color:pink!important;');
 	// console.log({backgroundColor, y: window.pageYOffset});
 
 	let marginBottomStyle =
-		window.pageYOffset <= 100 ? 'margin-bottom:800px;' : 'margin-bottom:50px;';
+		window.YOffset <= 100 ? 'margin-bottom:800px;' : 'margin-bottom:50px;';
 	const fontColor = el.dataset.fcolor;
 	if (homeIntroSection) homeIntroSection.setAttribute('style', marginBottomStyle);
 	if (aboutPart1Section) aboutPart1Section.setAttribute('style', marginBottomStyle);
@@ -210,30 +205,73 @@ const adjustPageColorsToFitCurrentElement = (el) => {
 	);
 };
 
+let isMobile = detectMob();
+
 window.addEventListener('DOMContentLoaded', () => {
-	document.body.className = 'body-visible';
 	isMobile = detectMob();
+	if (window.localStorage.getItem("goToProjects")) {
+		document.body.className = 'body-visible';
+		goToProjects()
+		window.localStorage.clear();
+
+		// window.setTimeout(() => {
+		// 	document.body.className = 'body-visible';
+		// 	goToProjects()
+		// }, 600)
+	}
+	else {
+		document.body.className = 'body-visible';
+	}
 });
 
 menuButton.addEventListener('click', (event) => {
 	menuOptionsContainer.classList.toggle('open');
 });
 
+
+
 window.addEventListener('scroll', (event) => {
-	// if (!isMobile) adjustScrollBarPositionIndicator();
+	if (!window.location.href.includes("/about")) {
+		if ((isMobile && window.scrollY >= 500) || (!isMobile && window.scrollY >= 600)) {
+			removeClassNameToElement(homeSection, "current-page");
+			addClassNameToElement(projectsSection, "current-page");
+		}
+		else {
+			removeClassNameToElement(projectsSection, "current-page");
+			addClassNameToElement(homeSection, "current-page");
+		}
+	}
 
 	coloredArticleElements.forEach((el, index) => {
 		if (elementInViewPortHeightAxis(el)) {
-			// console.log({
-			// 	getBoundingClientRectTop: el.getBoundingClientRect().top,
-			// 	windowInnerHeight: window.innerHeight,
-			// 	isInView: el.getBoundingClientRect().top < window.innerHeight,
-			// 	element: el,
-			// 	elementIndex: index
-			// });
-
 			addClassNameToElement(el, 'is-visible');
 			adjustPageColorsToFitCurrentElement(el);
 		} else removeClassNameToElement(el, 'is-visible');
 	});
+
 });
+
+const goToProjects = () => {
+	removeClassNameToElement(menuOptionsContainer, 'open');
+	removeClassNameToElement(homeSection, "current-page");
+	addClassNameToElement(projectsSection, "current-page");
+	window.scrollTo({ top: isMobile ? 500 : 600, left: 0, behavior: "auto" });
+};
+
+const goToHome = () => {
+
+	// addClassNameToElement(homeSection, "current-page");
+	// removeClassNameToElement(projectsSection, "current-page");
+	window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+	removeClassNameToElement(menuOptionsContainer, 'open');
+
+
+
+};
+
+const goToProjectsFromAboutPage = () => {
+	removeClassNameToElement(menuOptionsContainer, 'open');
+	window.localStorage.setItem("goToProjects", '1');
+	window.location.assign("./index.html");
+}
+
