@@ -172,14 +172,14 @@ const setFillColor = (el, fontColor) => {
 
 const adjustPageColorsToFitCurrentElement = (el) => {
 	let backgroundColor = el.dataset.bg;
-	if (window.YOffset <= 100) backgroundColor = 'pink';
+	if (window.pageYOffset <= 100) backgroundColor = 'pink';
 	// if (window.pageYOffset >= 100) backgroundColor = el.dataset.bg;
 	// else if (window.pageYOffset <= 100)
 	// 	document.body.setAttribute('style', 'background-color:pink!important;');
 	// console.log({backgroundColor, y: window.pageYOffset});
 
 	let marginBottomStyle =
-		window.YOffset <= 100 ? 'margin-bottom:800px;' : 'margin-bottom:50px;';
+		window.pageYOffset <= 100 ? 'margin-bottom:800px;' : 'margin-bottom:50px;';
 	const fontColor = el.dataset.fcolor;
 	if (homeIntroSection) homeIntroSection.setAttribute('style', marginBottomStyle);
 	if (aboutPart1Section) aboutPart1Section.setAttribute('style', marginBottomStyle);
@@ -213,15 +213,10 @@ window.addEventListener('DOMContentLoaded', () => {
 		document.body.className = 'body-visible';
 		goToProjects()
 		window.localStorage.clear();
-
-		// window.setTimeout(() => {
-		// 	document.body.className = 'body-visible';
-		// 	goToProjects()
-		// }, 600)
 	}
-	else {
+	else
 		document.body.className = 'body-visible';
-	}
+
 });
 
 menuButton.addEventListener('click', (event) => {
