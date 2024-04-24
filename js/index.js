@@ -31,6 +31,7 @@ class StyleSheet {
 
 new StyleSheet('scroll-style');
 const homeIntroSection = document.querySelector('section.intro');
+const workSections = document.querySelector('section.works');
 const aboutPart1Section = document.querySelector('section.about-part1');
 const header = document.getElementsByTagName('header')[0];
 const logo = document.querySelector('.logo');
@@ -206,8 +207,9 @@ const adjustPageColorsToFitCurrentElement = (el) => {
 };
 
 let isMobile = detectMob();
-
+let isIndexPage = !window.location.href.includes("/about");
 window.addEventListener('DOMContentLoaded', () => {
+	removeClassNameToElement(menuOptionsContainer, 'open');
 	isMobile = detectMob();
 	if (window.localStorage.getItem("goToProjects")) {
 		document.body.className = 'body-visible';
@@ -226,16 +228,18 @@ menuButton.addEventListener('click', (event) => {
 
 
 window.addEventListener('scroll', (event) => {
-	if (!window.location.href.includes("/about")) {
-		if ((isMobile && window.scrollY >= 500) || (!isMobile && window.scrollY >= 600)) {
-			removeClassNameToElement(homeSection, "current-page");
-			addClassNameToElement(projectsSection, "current-page");
+	if (isIndexPage) {
+		if (window.pageYOffset > 599) {
+			homeSection.classList.remove("current-page");
+			projectsSection.classList.add("current-page");
 		}
 		else {
-			removeClassNameToElement(projectsSection, "current-page");
-			addClassNameToElement(homeSection, "current-page");
+			projectsSection.classList.remove("current-page");
+			homeSection.classList.add("current-page");
 		}
 	}
+
+
 
 	coloredArticleElements.forEach((el, index) => {
 		if (elementInViewPortHeightAxis(el)) {
@@ -247,21 +251,14 @@ window.addEventListener('scroll', (event) => {
 });
 
 const goToProjects = () => {
-	removeClassNameToElement(menuOptionsContainer, 'open');
-	removeClassNameToElement(homeSection, "current-page");
-	addClassNameToElement(projectsSection, "current-page");
-	window.scrollTo({ top: isMobile ? 500 : 600, left: 0, behavior: "auto" });
+	window.scrollTo({ top: isMobile ? 600 : 550, left: 0, behavior: "auto" });
+	menuOptionsContainer.classList.remove('open');
+
 };
 
 const goToHome = () => {
-
-	// addClassNameToElement(homeSection, "current-page");
-	// removeClassNameToElement(projectsSection, "current-page");
+	menuOptionsContainer.classList.remove('open');
 	window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-	removeClassNameToElement(menuOptionsContainer, 'open');
-
-
-
 };
 
 const goToProjectsFromAboutPage = () => {
