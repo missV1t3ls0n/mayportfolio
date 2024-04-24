@@ -1,0 +1,287 @@
+@import "../../helpers/variables.scss";
+
+html {
+  body {
+    main.container {
+      section.intro {
+        // border: 1px solid red;
+        // height: 100vh;
+        // border: 1px solid green;
+        padding: 50px 150px;
+        margin-top: $header-height + 100px;
+        // margin-bottom: 0px;
+        // height: fit-content;
+
+        // height: fit-content;
+        article.intro-content {
+          .scrollToProjectsArrow {
+            height: 0px !important;
+            display: none;
+
+            h1 {
+              font-size: 0px;
+              display: none;
+            }
+            border: 1px solid red;
+          }
+          .title {
+            margin-bottom: 50px;
+            font-family: $h3-font;
+            font-size: 44px;
+            font-weight: 200;
+          }
+          .info {
+            display: flex;
+
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .left {
+              width: 50%;
+              .tags {
+              }
+              img {
+                width: 60%;
+                max-width: 600px;
+                height: auto;
+                transition: 0.8s ease-in;
+                transform: scale(0.95);
+
+                &:hover {
+                  cursor: pointer;
+                  filter: drop-shadow(1 1 0.75rem rgb(255, 46, 206));
+
+                  transform: scale(1);
+
+                  transition: 0.8s ease-in;
+                }
+              }
+            }
+            .right {
+              width: 50%;
+              font-weight: 500;
+
+              .about {
+              }
+              .contact {
+                font-size: 18px;
+                font-weight: 500;
+                padding: 10px;
+                font-family: "Raleway", sans-serif;
+                letter-spacing: 0.2px;
+                .email {
+                  // margin-bottom: 5px;
+                }
+                .social {
+                  ul {
+                    display: flex;
+                    li {
+                      a {
+                        text-decoration: none;
+                        margin-right: 5px;
+                        &::after {
+                          content: " | ";
+                        }
+                      }
+                      &:last-child {
+                        a::after {
+                          content: "";
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .works {
+        font-family: $h3-font;
+        height: 100%;
+        padding: 50px 150px;
+
+        .single-work {
+          // border: 1px solid green;
+          margin-bottom: 100px;
+          // padding: 50px 0px;
+
+          // margin-bottom: 100vh;
+          // border: 3px solid red;
+          height: fit-content;
+
+          &.tempe {
+            // height: 200vh;
+          }
+          &.peimot {
+          }
+
+          &.clinic {
+            // margin-top: 200px;
+          }
+          &.liberal {
+          }
+          &.gimgum {
+          }
+          .title {
+            transform: translateY(100px);
+            opacity: 0;
+            // filter: blur(0px);
+            filter: unset;
+
+            margin-bottom: 50px;
+            display: block;
+            // background-color: red;
+            font-family: $h3-font;
+            font-size: 44px;
+            font-weight: 200;
+          }
+          .info {
+            display: flex;
+            .left {
+              width: 50%;
+              opacity: 0;
+              transform: translateY(50px);
+              .tags {
+                opacity: 0;
+                transform: translateY(50px);
+              }
+
+              .single-work-link {
+              }
+            }
+            .right {
+              width: 50%;
+              opacity: 0;
+              filter: blur(0px);
+              filter: unset;
+              transform: translateY(40px);
+
+              p {
+              }
+              // background-color: dodgerblue;
+            }
+          }
+
+          h4 {
+            text-align: center;
+          }
+
+          .single-work-link {
+            margin-bottom: 20px;
+            color: white;
+
+            a {
+              color: white;
+              padding: 10px;
+
+              font-size: 18px;
+            }
+
+            span.under-development {
+              padding: 10px;
+              display: inline-block;
+              // : 1px solid red;
+            }
+          }
+          .gallery {
+            transform: translateY(100px);
+            opacity: 0;
+            filter: unset;
+            height: fit-content;
+            .single-image {
+              width: 100%;
+              height: auto;
+              // margin-bottom: 20px;
+              > img {
+                margin-bottom: 20px;
+                width: 100%;
+                height: auto;
+
+                &.icon-pallette-svg {
+                  // box-shadow: black;
+                  // background-color: white;
+                  // border: 2px solid red;
+                }
+              }
+            }
+
+            .double-image {
+              display: flex;
+
+              img {
+                width: 50%;
+                height: auto;
+                margin-bottom: 30px;
+                &.left-img {
+                  padding-right: 15px;
+                }
+                &.right-img {
+                  padding-left: 15px;
+                }
+              }
+            }
+          }
+
+          &.is-visible {
+            .title {
+              transform: translateY(0px);
+              opacity: 1;
+              transition: all 0.8s;
+              filter: unset;
+              // transition: opacity 0.4s;
+            }
+
+            .info {
+              .left {
+                // transform: translateY(0px);
+                // opacity: 1;
+                // transition: transform 1.5s;
+                // transition: opacity 0.4s;
+                width: 50%;
+                transform: translateY(0px);
+
+                opacity: 1;
+                transition: all 0.4s;
+                .tags {
+                  transform: translateY(0px);
+
+                  opacity: 1;
+                  transition: all 0.4s;
+                }
+
+                .single-work-link {
+                }
+              }
+              .right {
+                opacity: 1;
+                transform: translateY(0px);
+                filter: unset;
+
+                transition: all 0.8s;
+                p {
+                }
+                // background-color: dodgerblue;
+              }
+            }
+
+            .gallery {
+              filter: unset;
+              transform: translateY(0px);
+              opacity: 1;
+              transition: all 0.2s;
+
+              .single-image {
+                img {
+                }
+              }
+              .double-image {
+                img {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

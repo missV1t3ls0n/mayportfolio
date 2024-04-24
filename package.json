@@ -1,0 +1,19 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss ./dist/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=19",
+    "npm": ">=8"
+  },
+  "dependencies": {
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2"
+  }
+}

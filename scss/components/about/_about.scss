@@ -1,0 +1,432 @@
+@import "../../helpers/variables.scss";
+
+section.about-part1 {
+  height: fit-content;
+  margin-top: 100px;
+  margin-bottom: 800px;
+
+  // height: 100vh;
+  // min-height: 80vh;
+  padding: 0px 150px;
+  // border: 1px solid red;
+
+  article {
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .left {
+        width: 50%;
+        align-items: center !important;
+        img {
+          border-radius: 100px 100px 10px 10px;
+          width: 60%;
+          // : ;
+          height: auto;
+          max-width: 600px;
+          transition: 0.8s ease-in;
+          transform: scale(0.95);
+
+          &:hover {
+            cursor: pointer;
+            filter: drop-shadow(1 1 0.75rem rgb(255, 46, 206));
+
+            transform: scale(1);
+
+            transition: 0.8s ease-in;
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+        padding: 10px;
+        // border: 1px solid red;
+        .contact {
+          // font-family: $regular-font;
+          // padding: 5px;
+          // font-size: 18px;
+          // font-weight: 600;
+          // font-style: italic;
+          // border: 1px solid red;
+          // align-self: flex-start;
+          // justify-self: auto;
+          // justify-content: space-between;
+          // align-items: center;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 10px;
+          font-family: "Raleway", sans-serif;
+          letter-spacing: 0.2px;
+          // margin-bottom: 50px;
+        }
+
+        .bio-paragraph {
+          // margin-bottom: 60px;
+        }
+      }
+    }
+    .fullname {
+      margin-bottom: 50px;
+      display: block;
+      font-family: $font-logo;
+
+      font-size: 44px;
+      font-weight: 200;
+    }
+
+    .email {
+    }
+
+    .social {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+section.about-part2 {
+  // height: fit-content;
+  padding: 0px 150px;
+  margin-top: 100px;
+  margin-bottom: 0px !important;
+
+  // margin-bottom: 100px;
+  article {
+    // height: 20vh;
+
+    display: flex;
+    // margin-bottom: 20px;
+
+    .right {
+      // border: 1px solid red;
+
+      padding: 10px;
+      width: 50%;
+      .skills {
+        margin-left: 200px;
+
+        h2 {
+          font-family: $h3-font;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          li {
+            text-align: left;
+            margin-bottom: 7px;
+
+            font-family: $regular-font;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .left {
+      width: 50%;
+      font-weight: 500;
+
+      .experience {
+        // min-height: 150vh;
+        // border: 1px solid blue;
+
+        h2 {
+          font-family: $h3-font;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        // margin-bottom: 100px;
+        ul {
+          li {
+            // border: 1px solid red;
+            font-family: $regular-font;
+            font-size: 18px;
+            font-weight: 500;
+            // margin-bottom: 20px;
+            margin: 30px 0px;
+
+            .city {
+              font-size: 14px;
+            }
+            .job-title {
+              font-weight: 600;
+              // font-style: italic;
+              &::after {
+                content: ", ";
+              }
+            }
+            .employer {
+              font-weight: 400;
+              font-style: italic;
+              &::after {
+                content: ",\00a0";
+              }
+            }
+
+            .date {
+              margin: 3px 0px;
+              .year-number {
+                font-size: 16px;
+              }
+            }
+            .description {
+              font-size: 16px;
+              margin-bottom: 15px;
+            }
+            &.freelance {
+            }
+            &.zehut-ve-safe {
+            }
+            &.open-company {
+              // margin-bottom: 220px;
+            }
+          }
+        }
+      }
+
+      .education {
+        margin-top: 20px;
+
+        h2 {
+          font-family: $h3-font;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          li {
+            font-family: $regular-font;
+            font-size: 18px;
+            margin: 30px 0px;
+
+            .name {
+              font-weight: 600;
+              font-style: italic;
+            }
+            .field-of-study {
+              font-weight: 500;
+            }
+            .years {
+              font-size: 16px;
+              font-weight: 400;
+            }
+            .city {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .about-part1 > article.part1 {
+    h3.fullname {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    div.content-wrapper {
+      // flex-wrap: wrap;
+
+      .left {
+        width: 100% !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        img {
+          width: 60%;
+          // align-self: center;
+          display: block;
+          margin: auto;
+          // padding: 10px;
+        }
+      }
+
+      .right {
+        width: 100% !important;
+        .bio-paragraph {
+          // margin-bottom: 10px;
+          padding: 10px;
+          font-size: 24px;
+          margin-bottom: 50px;
+        }
+        .contact {
+          padding: 0px;
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.about-part1 {
+    margin-top: $header-height !important;
+    div.content-wrapper {
+      // display: block !important;
+
+      .left {
+        img {
+          width: 80% !important;
+        }
+      }
+    }
+
+    .right {
+      .bio-paragraph {
+        font-size: 20px !important;
+      }
+
+      .contact {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  section.about-part2 {
+    // margin-bottom: 20px;
+    height: fit-content;
+    // background-color: yellow;
+    // margin-bottom: 200px;
+
+    article {
+      padding: 0px 0px !important;
+      display: block !important;
+      .left {
+        width: 100% !important;
+        // border: 1px solid green;
+        .experience {
+          margin-bottom: 0px;
+          // height: 90vh;
+          ul {
+            li {
+              margin-bottom: 60px;
+              &:last-child {
+                margin-bottom: 0px;
+              }
+            }
+          }
+        }
+        .education {
+          // margin: 0px;
+          // height: 30vh;
+          // margin-bottom: 60px;
+        }
+      }
+      .right {
+        // height: 85vh;
+
+        // display: block !important;
+        width: 100% !important;
+        margin-top: 30px;
+        padding: 0px !important;
+
+        .skills {
+          margin: 0px !important;
+
+          ul.skills-list {
+            li {
+              &:last-child {
+                margin-bottom: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.about-part1 {
+    // padding: 0px 25px !important;
+
+    div.content-wrapper {
+      display: block !important;
+
+      .left {
+        width: 90% !important;
+        margin: auto;
+
+        img {
+          width: 90% !important;
+        }
+      }
+
+      .right {
+        width: 100% !important;
+        .bio-paragraph {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  section.about-part2 {
+    article {
+      // padding: 0px 25px !important;
+      display: block !important;
+      .left {
+        width: 100% !important;
+        .experience {
+          // margin-bottom: 30px;
+          // height: 90vh;
+          ul {
+            li {
+              margin-bottom: 60px;
+              &:last-child {
+                margin-bottom: 0px;
+              }
+            }
+          }
+        }
+        .education {
+          // margin: 0px;
+          // height: 30vh;
+          // margin-bottom: 60px;
+        }
+      }
+      .right {
+        // height: 185vh;
+
+        // display: block !important;
+        width: 100% !important;
+        margin-top: 30px;
+        padding: 0px !important;
+
+        .skills {
+          margin: 0px !important;
+
+          ul.skills-list {
+            li {
+              &:last-child {
+                margin-bottom: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 750px) {
+  section.about-part1 {
+    margin-top: $header-height !important;
+    // height: 100vh !important;
+
+    div.content-wrapper {
+      .left {
+        img {
+          width: 60% !important;
+        }
+      }
+    }
+  }
+}

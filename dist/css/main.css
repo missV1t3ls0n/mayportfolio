@@ -1,0 +1,1298 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+body {
+  opacity: 0;
+  filter: blur(30px);
+}
+body.body-visible {
+  opacity: 1;
+  background-color: pink;
+  transition: all 1s ease-in-out;
+  filter: unset;
+}
+
+*,
+html,
+body,
+main {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: helvetica;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 70vw;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.experimental-container {
+  width: 90vw;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.tags {
+  margin-bottom: 20px;
+  font-family: "Titillium Web", sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+.p-style {
+  font-family: "Titillium Web", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1366px) {
+  .left-side-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15vw;
+  }
+  .right-side-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .container {
+    width: 85vw !important;
+  }
+  .menu-wrapper {
+    width: 85vw !important;
+  }
+  .left-side-container {
+    display: none;
+    overflow: hidden;
+    max-width: 0px;
+    width: 0px;
+  }
+  .right-side-container {
+    display: none;
+    overflow: hidden;
+    max-width: 0px;
+    width: 0px;
+    max-height: 0px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 85vw !important;
+  }
+  .menu-wrapper {
+    width: 85vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100vw !important;
+  }
+  .menu-wrapper {
+    width: 100vw !important;
+  }
+}
+header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: "all 0.4s ease-out";
+}
+header div.left-side-container {
+  height: 100%;
+}
+header div.left-side-container a {
+  text-decoration: none;
+}
+header div.left-side-container a span.logo {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+header div.right-side-container {
+  height: 100%;
+}
+
+html body main.container section.intro {
+  padding: 50px 150px;
+  margin-top: 160px;
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .scrollToProjectsArrow {
+  height: 0px !important;
+  display: none;
+  border: 1px solid red;
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .scrollToProjectsArrow
+  h1 {
+  font-size: 0px;
+  display: none;
+}
+html body main.container section.intro article.intro-content .title {
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  font-weight: 200;
+}
+html body main.container section.intro article.intro-content .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+html body main.container section.intro article.intro-content .info .left {
+  width: 50%;
+}
+html body main.container section.intro article.intro-content .info .left img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  transition: 0.8s ease-in;
+  transform: scale(0.95);
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .info
+  .left
+  img:hover {
+  cursor: pointer;
+  filter: drop-shadow(1 1 0.75rem rgb(255, 46, 206));
+  transform: scale(1);
+  transition: 0.8s ease-in;
+}
+html body main.container section.intro article.intro-content .info .right {
+  width: 50%;
+  font-weight: 500;
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .info
+  .right
+  .contact {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .info
+  .right
+  .contact
+  .social
+  ul {
+  display: flex;
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .info
+  .right
+  .contact
+  .social
+  ul
+  li
+  a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .info
+  .right
+  .contact
+  .social
+  ul
+  li
+  a::after {
+  content: " | ";
+}
+html
+  body
+  main.container
+  section.intro
+  article.intro-content
+  .info
+  .right
+  .contact
+  .social
+  ul
+  li:last-child
+  a::after {
+  content: "";
+}
+html body main.container .works {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  padding: 50px 150px;
+}
+html body main.container .works .single-work {
+  margin-bottom: 100px;
+  height: fit-content;
+}
+html body main.container .works .single-work .title {
+  transform: translateY(100px);
+  opacity: 0;
+  filter: unset;
+  margin-bottom: 50px;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  font-weight: 200;
+}
+html body main.container .works .single-work .info {
+  display: flex;
+}
+html body main.container .works .single-work .info .left {
+  width: 50%;
+  opacity: 0;
+  transform: translateY(50px);
+}
+html body main.container .works .single-work .info .left .tags {
+  opacity: 0;
+  transform: translateY(50px);
+}
+html body main.container .works .single-work .info .right {
+  width: 50%;
+  opacity: 0;
+  filter: blur(0px);
+  filter: unset;
+  transform: translateY(40px);
+}
+html body main.container .works .single-work h4 {
+  text-align: center;
+}
+html body main.container .works .single-work .single-work-link {
+  margin-bottom: 20px;
+  color: white;
+}
+html body main.container .works .single-work .single-work-link a {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+html
+  body
+  main.container
+  .works
+  .single-work
+  .single-work-link
+  span.under-development {
+  padding: 10px;
+  display: inline-block;
+}
+html body main.container .works .single-work .gallery {
+  transform: translateY(100px);
+  opacity: 0;
+  filter: unset;
+  height: fit-content;
+}
+html body main.container .works .single-work .gallery .single-image {
+  width: 100%;
+  height: auto;
+}
+html body main.container .works .single-work .gallery .single-image > img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+html body main.container .works .single-work .gallery .double-image {
+  display: flex;
+}
+html body main.container .works .single-work .gallery .double-image img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 30px;
+}
+html
+  body
+  main.container
+  .works
+  .single-work
+  .gallery
+  .double-image
+  img.left-img {
+  padding-right: 15px;
+}
+html
+  body
+  main.container
+  .works
+  .single-work
+  .gallery
+  .double-image
+  img.right-img {
+  padding-left: 15px;
+}
+html body main.container .works .single-work.is-visible .title {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.8s;
+  filter: unset;
+}
+html body main.container .works .single-work.is-visible .info .left {
+  width: 50%;
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.4s;
+}
+html body main.container .works .single-work.is-visible .info .left .tags {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.4s;
+}
+html body main.container .works .single-work.is-visible .info .right {
+  opacity: 1;
+  transform: translateY(0px);
+  filter: unset;
+  transition: all 0.8s;
+}
+html body main.container .works .single-work.is-visible .gallery {
+  filter: unset;
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all 0.2s;
+}
+section.about-part1 {
+  height: fit-content;
+  margin-top: 100px;
+  margin-bottom: 800px;
+  padding: 0px 150px;
+}
+section.about-part1 article .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+section.about-part1 article .content-wrapper .left {
+  width: 50%;
+  align-items: center !important;
+}
+section.about-part1 article .content-wrapper .left img {
+  border-radius: 100px 100px 10px 10px;
+  width: 60%;
+  height: auto;
+  max-width: 600px;
+  transition: 0.8s ease-in;
+  transform: scale(0.95);
+}
+section.about-part1 article .content-wrapper .left img:hover {
+  cursor: pointer;
+  filter: drop-shadow(1 1 0.75rem rgb(255, 46, 206));
+  transform: scale(1);
+  transition: 0.8s ease-in;
+}
+section.about-part1 article .content-wrapper .right {
+  width: 50%;
+  padding: 10px;
+}
+section.about-part1 article .content-wrapper .right .contact {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+}
+section.about-part1 article .fullname {
+  margin-bottom: 50px;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  font-weight: 200;
+}
+section.about-part1 article .social a {
+  text-decoration: none;
+}
+
+section.about-part2 {
+  padding: 0px 150px;
+  margin-top: 100px;
+  margin-bottom: 0px !important;
+}
+section.about-part2 article {
+  display: flex;
+}
+section.about-part2 article .right {
+  padding: 10px;
+  width: 50%;
+}
+section.about-part2 article .right .skills {
+  margin-left: 200px;
+}
+section.about-part2 article .right .skills h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+section.about-part2 article .right .skills ul li {
+  text-align: left;
+  margin-bottom: 7px;
+  font-family: "Titillium Web", sans-serif;
+}
+section.about-part2 article .right .skills ul li:hover {
+  color: white;
+}
+section.about-part2 article .left {
+  width: 50%;
+  font-weight: 500;
+}
+section.about-part2 article .left .experience h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+section.about-part2 article .left .experience ul li {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0px;
+}
+section.about-part2 article .left .experience ul li .city {
+  font-size: 14px;
+}
+section.about-part2 article .left .experience ul li .job-title {
+  font-weight: 600;
+}
+section.about-part2 article .left .experience ul li .job-title::after {
+  content: ", ";
+}
+section.about-part2 article .left .experience ul li .employer {
+  font-weight: 400;
+  font-style: italic;
+}
+section.about-part2 article .left .experience ul li .employer::after {
+  content: ", ";
+}
+section.about-part2 article .left .experience ul li .date {
+  margin: 3px 0px;
+}
+section.about-part2 article .left .experience ul li .date .year-number {
+  font-size: 16px;
+}
+section.about-part2 article .left .experience ul li .description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+section.about-part2 article .left .education {
+  margin-top: 20px;
+}
+section.about-part2 article .left .education h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+section.about-part2 article .left .education ul li {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  margin: 30px 0px;
+}
+section.about-part2 article .left .education ul li .name {
+  font-weight: 600;
+  font-style: italic;
+}
+section.about-part2 article .left .education ul li .field-of-study {
+  font-weight: 500;
+}
+section.about-part2 article .left .education ul li .years {
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (max-width: 1023px) {
+  .about-part1 > article.part1 h3.fullname {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .about-part1 > article.part1 div.content-wrapper .left {
+    width: 100% !important;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .about-part1 > article.part1 div.content-wrapper .left img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  .about-part1 > article.part1 div.content-wrapper .right {
+    width: 100% !important;
+  }
+  .about-part1 > article.part1 div.content-wrapper .right .bio-paragraph {
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .about-part1 > article.part1 div.content-wrapper .right .contact {
+    padding: 0px;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.about-part1 {
+    margin-top: 60px !important;
+  }
+  section.about-part1 div.content-wrapper .left img {
+    width: 80% !important;
+  }
+  section.about-part1 .right .bio-paragraph {
+    font-size: 20px !important;
+  }
+  section.about-part1 .right .contact {
+    font-size: 20px !important;
+  }
+  section.about-part2 {
+    height: fit-content;
+  }
+  section.about-part2 article {
+    padding: 0px 0px !important;
+    display: block !important;
+  }
+  section.about-part2 article .left {
+    width: 100% !important;
+  }
+  section.about-part2 article .left .experience {
+    margin-bottom: 0px;
+  }
+  section.about-part2 article .left .experience ul li {
+    margin-bottom: 60px;
+  }
+  section.about-part2 article .left .experience ul li:last-child {
+    margin-bottom: 0px;
+  }
+  section.about-part2 article .right {
+    width: 100% !important;
+    margin-top: 30px;
+    padding: 0px !important;
+  }
+  section.about-part2 article .right .skills {
+    margin: 0px !important;
+  }
+  section.about-part2 article .right .skills ul.skills-list li:last-child {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.about-part1 div.content-wrapper {
+    display: block !important;
+  }
+  section.about-part1 div.content-wrapper .left {
+    width: 90% !important;
+    margin: auto;
+  }
+  section.about-part1 div.content-wrapper .left img {
+    width: 90% !important;
+  }
+  section.about-part1 div.content-wrapper .right {
+    width: 100% !important;
+  }
+  section.about-part1 div.content-wrapper .right .bio-paragraph {
+    margin-bottom: 10px;
+  }
+  section.about-part2 article {
+    display: block !important;
+  }
+  section.about-part2 article .left {
+    width: 100% !important;
+  }
+  section.about-part2 article .left .experience ul li {
+    margin-bottom: 60px;
+  }
+  section.about-part2 article .left .experience ul li:last-child {
+    margin-bottom: 0px;
+  }
+  section.about-part2 article .right {
+    width: 100% !important;
+    margin-top: 30px;
+    padding: 0px !important;
+  }
+  section.about-part2 article .right .skills {
+    margin: 0px !important;
+  }
+  section.about-part2 article .right .skills ul.skills-list li:last-child {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-height: 750px) {
+  section.about-part1 {
+    margin-top: 60px !important;
+  }
+  section.about-part1 div.content-wrapper .left img {
+    width: 60% !important;
+  }
+}
+.menu-wrapper {
+  margin: 0px auto;
+  width: 70vw;
+  max-height: 60px;
+  z-index: 90;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu-wrapper nav.menu {
+  display: flex;
+  height: 60px;
+  margin-left: 150px;
+  max-width: fit-content;
+  top: 0;
+  cursor: pointer;
+}
+.menu-wrapper nav.menu span {
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+.menu-wrapper nav.menu span.text {
+  margin-right: 10px;
+}
+.menu-wrapper nav.menu span + div.chevrons-container {
+  width: 15px;
+}
+.menu-wrapper nav.menu span + div.chevrons-container > span.chevron-icon {
+  height: 60px;
+}
+.menu-wrapper nav.menu span + div.chevrons-container > span.chevron-icon.a {
+  fill: white;
+}
+.menu-wrapper
+  nav.menu
+  span
+  + div.chevrons-container
+  > span.chevron-icon.a
+  > svg {
+  transform: translate(0, -50px);
+}
+.menu-wrapper nav.menu span + div.chevrons-container > span.chevron-icon.b {
+  fill: black;
+}
+.menu-wrapper nav.menu span + div.chevrons-container > span.chevron-icon > svg {
+  margin-top: 0px;
+  width: 15px;
+  transition: transform 0.2s ease-in;
+}
+.menu-wrapper
+  nav.menu
+  span
+  + div.chevrons-container
+  > span.chevron-icon
+  > svg.chevron-open-state {
+  transform: translate(0, 0px);
+  transform: rotate(0deg);
+}
+.menu-wrapper
+  nav.menu
+  span
+  + div.chevrons-container
+  > span.chevron-icon
+  > svg.chevron-open-state.svg-a {
+  transform: rotate(-180deg);
+  transform: translate(0, 25px);
+  transition: 0.2s ease-in;
+}
+.menu-wrapper
+  nav.menu
+  span
+  + div.chevrons-container
+  > span.chevron-icon
+  > svg.chevron-open-state.svg-a:hover {
+  pointer-events: none;
+}
+.menu-wrapper
+  nav.menu
+  span
+  + div.chevrons-container
+  > span.chevron-icon
+  > svg.chevron-open-state.svg-b:hover {
+  pointer-events: none;
+}
+.menu-wrapper nav.menu span + div.chevrons-container:hover span.a > svg {
+  transform: translate(0, 25px);
+}
+.menu-wrapper nav.menu span + div.chevrons-container:hover span.b > svg {
+  transform: translate(0, 200px);
+}
+
+.menu-options-wrapper {
+  position: fixed;
+  z-index: 9999;
+  background-color: pink;
+  margin: 0px auto;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 0vh;
+  overflow: hidden;
+  transition: height 0.4s ease-in;
+}
+.menu-options-wrapper.open {
+  z-index: 999999;
+  height: 100vh;
+  transition: height 0.4s ease-out;
+}
+.menu-options-wrapper .menu-options {
+  height: 100vh;
+  padding: 0px 150px;
+}
+.menu-options-wrapper .menu-options a {
+  text-decoration: none;
+}
+.menu-options-wrapper .menu-options a.current-page > h4 {
+  width: 90px;
+  max-width: fit-content;
+  transition: all 0.4s ease-in;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+.menu-options-wrapper .menu-options a h4 {
+  width: 0px;
+  margin-bottom: 5px;
+  color: white;
+  padding: 10px 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-width: 0px 0px 0px 0px;
+}
+.menu-options-wrapper .menu-options a h4:hover {
+  width: 90px;
+  max-width: fit-content;
+  transition: all 0.4s ease-in;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+.menu-options-wrapper .menu-options a.contact-menu-item h4 {
+  display: flex;
+  width: fit-content;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+}
+.menu-options-wrapper .menu-options a.contact-menu-item h4:hover {
+  background: white;
+  color: black;
+}
+.menu-options-wrapper .menu-options a.contact-menu-item h4.gmail:hover::after {
+  padding: 0px 5px;
+  content: ": mayvitelson@gmail.com";
+  font-size: 18px;
+}
+.menu-options-wrapper .menu-options a.contact-menu-item h4.phone:hover::after {
+  padding: 0px 5px;
+  content: ": 0549407589";
+  font-size: 18px;
+}
+.menu-options-wrapper .menu-options hr {
+  border-bottom: 1px solid white;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main.illustration-page {
+  min-height: 100%;
+  overflow: hidden !important;
+}
+main.illustration-page section.illustration-content {
+  z-index: 2000;
+  position: relative;
+  height: 80vh;
+  width: 90vw;
+  overflow: hidden !important;
+  box-sizing: content-box;
+  margin: 100px auto;
+}
+main.illustration-page section.illustration-content > img {
+  box-sizing: content-box;
+  position: absolute;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+main.illustration-page section.illustration-content > img:nth-child(1n) {
+  top: 49vw;
+  right: 44vw;
+}
+main.illustration-page section.illustration-content > img:nth-child(2n) {
+  bottom: 22vw;
+  left: 41vw;
+}
+main.illustration-page section.illustration-content > img:nth-child(3n) {
+  top: 2vw;
+  right: 40vw;
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item {
+  box-sizing: content-box;
+  position: absolute;
+  background-color: rgb(248, 112, 254);
+  border: 1px solid white;
+  min-height: 100px;
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(1n) {
+  height: 3px;
+  width: 45px;
+  top: 1vw;
+  border-radius: 16px;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 23vw;
+  background-color: rgb(118, 169, 23);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(2n) {
+  height: 85px;
+  width: 110px;
+  background-color: blueviolet;
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(3n) {
+  height: 122px;
+  width: 103px;
+  top: 40vw;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  border-radius: 1px;
+  bottom: 49vw;
+  background-color: rgb(203, 132, 142);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(4n) {
+  height: 23px;
+  width: 117px;
+  top: 54vw;
+  border-radius: 4px;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 27vw;
+  background-color: rgb(41, 20, 233);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(5n) {
+  height: 115px;
+  width: 82px;
+  top: 36vw;
+  border-radius: 8px;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 38vw;
+  background-color: rgb(194, 180, 22);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(6n) {
+  border-radius: 9px;
+  height: 41px;
+  width: 132px;
+  top: 36vw;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 2vw;
+  background-color: rgb(64, 6, 53);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(7n) {
+  height: 132px;
+  width: 161px;
+  top: 44vw;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 19vw;
+  background-color: rgb(155, 221, 240);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(8n) {
+  height: 83px;
+  width: 47px;
+  top: 52vw;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 7vw;
+  background-color: rgb(55, 188, 79);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(9n) {
+  height: 34px;
+  width: 32px;
+  top: 27vw;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 26vw;
+  background-color: rgb(59, 247, 20);
+}
+main.illustration-page
+  section.illustration-content
+  > article.illustration-item:nth-child(10n) {
+  height: 122px;
+  width: 60px;
+  top: 14vw;
+  /* 				right: random(50) vw;
+  left: random(30) + vw; */
+  bottom: 9vw;
+  background-color: rgb(183, 247, 38);
+}
+
+html body footer {
+  display: block;
+  position: relative;
+  bottom: 0;
+  background: white;
+  height: 60px;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+body::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+body::-webkit-overflow-scrolling:auto {
+  height: 10px;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: rgb(47, 47, 47);
+  border-radius: 5px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid rgb(22, 22, 22);
+  border-radius: 5px;
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* Dimensions */
+  width: 100%;
+  height: 5px;
+  /* Reset the appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+  /* Progress bar value for IE10+ */
+}
+
+progressbody::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+div.contact h4 {
+  font-family: "Titillium Web", sans-serif;
+  display: inline-block;
+  font-style: italic;
+  margin-right: 5px;
+}
+div.contact h4:hover {
+  cursor: pointer;
+}
+div.contact span.contact-item {
+  padding: 0px;
+}
+div.contact span.contact-item::after {
+  content: "|";
+  color: black;
+  margin: 2.5px;
+}
+div.contact span.contact-item:last-child::after {
+  content: none;
+}
+div.contact span.contact-item > a {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+}
+div.contact span.contact-item > a:hover {
+  color: white;
+  margin: 5px;
+}
+
+@media screen and (min-width: 1366px) {
+  .intro {
+    padding: 50px 150px !important;
+    height: fit-content;
+  }
+  .works {
+    padding: 50px 150px;
+  }
+  .works article.single-work {
+    padding: 0px 0px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .intro {
+    padding: 100px 100px !important;
+  }
+  .works {
+    padding: 50px 100px !important;
+  }
+  .works article.single-work {
+    padding: 0px 0px;
+  }
+  nav.menu {
+    margin-left: 100px !important;
+  }
+  .menu-options {
+    padding: 0px 100px !important;
+  }
+  section.about-part1,
+  section.about-part2 {
+    padding: 0px 100px !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro {
+    margin-top: 60px;
+    padding: 75px !important;
+  }
+  .works {
+    padding: 50px 75px !important;
+  }
+  .works article.single-work {
+    padding: 0px 0px;
+  }
+  nav.menu {
+    margin-left: 75px !important;
+  }
+  .menu-options {
+    padding: 0px 75px !important;
+  }
+  section.about-part1,
+  section.about-part2 {
+    margin-top: 60px;
+    padding: 0px 75px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info {
+    display: block !important;
+  }
+  .info .left {
+    min-width: 100%;
+  }
+  .info .right {
+    min-width: 100%;
+  }
+  .intro {
+    margin-top: 60px;
+    padding: 50px !important;
+  }
+  .works {
+    padding: 50px 50px !important;
+  }
+  .works article.single-work {
+    padding: 0px 0px;
+  }
+  section.about-part1,
+  section.about-part2 {
+    margin-top: 200px;
+    padding: 0px 50px !important;
+  }
+  nav.menu {
+    margin-left: 50px !important;
+  }
+  .menu-options {
+    padding: 0px 50px !important;
+  }
+  .single-work {
+    margin-bottom: 100vh;
+  }
+  .single-work.tempe .assets {
+    overflow: hidden;
+    margin: auto;
+  }
+  .single-work.tempe .assets .right {
+    display: block !important;
+  }
+  .single-work .gallery .double-image {
+    display: block !important;
+  }
+  .single-work .gallery .double-image img {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+  }
+  .single-work .gallery .double-image img.left-img {
+    min-width: 100%;
+    height: auto;
+    padding: 0px !important;
+  }
+  .single-work .gallery .double-image img.right-img {
+    min-width: 100%;
+    height: auto;
+    padding: 0px !important;
+  }
+  .single-work .title {
+    transform: translateY(100px);
+    opacity: 0;
+    filter: unset;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 34px;
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro {
+    padding: 12.5px !important;
+    margin-bottom: 0px;
+    margin-top: 100px;
+  }
+  .intro article.single-work {
+    padding: 0px 0px !important;
+  }
+  .works {
+    padding: 50px 12.5px !important;
+  }
+  .works article.single-work {
+    padding: 0px 0px !important;
+  }
+  section.about-part1,
+  section.about-part2 {
+    margin-top: 60px;
+    padding: 0px 12.5px !important;
+  }
+  section.about-part1 article.part1 h3.fullname,
+  section.about-part2 article.part1 h3.fullname {
+    text-align: center;
+  }
+  section.about-part1 article.part1 .contact,
+  section.about-part2 article.part1 .contact {
+    text-align: center;
+  }
+  nav.menu {
+    margin-left: 12.5px !important;
+  }
+  .menu-options {
+    padding: 0px 15px !important;
+  }
+  .title {
+    font-size: 36px !important;
+  }
+  .works .single-work.tempe .assets {
+    display: block !important;
+  }
+  .works .single-work.tempe .right {
+    margin-left: 0px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

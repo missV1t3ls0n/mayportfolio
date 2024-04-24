@@ -1,0 +1,10 @@
+body {
+	opacity: 0;
+	filter: blur(30px);
+	&.body-visible {
+		opacity: 1;
+		background-color: pink;
+		transition: all 1s ease-in-out;
+		filter: unset;
+	}
+}

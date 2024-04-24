@@ -1,0 +1,165 @@
+main.illustration-page {
+	min-height: 100%;
+	overflow: hidden !important;
+
+	section.illustration-content {
+		z-index: 2000;
+		position: relative;
+		height: 80vh;
+		width: 90vw;
+		// height: 1000px;
+		// width: 1000px;
+		overflow: hidden !important;
+		box-sizing: content-box;
+
+		// border: 1px solid red;
+		// background-color: rgb(random(255), random(255), random(255));
+		margin: 100px auto;
+		// margin-top: 100px;
+		// padding: 60px;
+
+		> img {
+			box-sizing: content-box;
+			position: absolute;
+			max-width: 400px;
+			max-height: 400px;
+			width: auto;
+			height: auto;
+			// border: 2px solid red;
+			&:nth-child(1n) {
+				top: random(60) + vw;
+				right: random(50) + vw;
+				// border: 20px solid blue;
+				// border-radius: random(10) + px;
+				// left: random(30) + vw; */
+				// bottom: random(90) + vw;
+			}
+			// border: 2px solid red;
+			&:nth-child(2n) {
+				bottom: random(60) + vw;
+				left: random(50) + vw;
+				// border: 20px solid blue;
+				// border-radius: random(10) + px;
+				// left: random(30) + vw; */
+				// bottom: random(90) + vw;
+			}
+			// border: 2px solid red;
+			&:nth-child(3n) {
+				top: random(10) + vw;
+				right: random(50) + vw;
+				// border: 20px solid blue;
+				// border-radius: random(10) + px;
+				// left: random(30) + vw; */
+				// bottom: random(90) + vw;
+			}
+		}
+
+		> article.illustration-item {
+			box-sizing: content-box;
+
+			position: absolute;
+			background-color: rgb(random(255), random(255), random(255));
+			// border: 5px solid red;
+			border: 1px solid white;
+			min-height: 100px;
+
+			&:nth-child(1n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				border-radius: random(60) + px;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+			&:nth-child(2n) {
+				height: random(160) + px;
+				width: random(180) + px;
+
+				background-color: blueviolet;
+			}
+			&:nth-child(3n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				border-radius: random(10) + px;
+
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+
+			&:nth-child(4n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				border-radius: random(10) + px;
+
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(41, 20, 233);
+			}
+			&:nth-child(5n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				border-radius: random(10) + px;
+
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+			&:nth-child(6n) {
+				border-radius: random(10) + px;
+
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+			&:nth-child(7n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+			&:nth-child(8n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+			&:nth-child(9n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+			&:nth-child(10n) {
+				height: random(160) + px;
+				width: random(180) + px;
+				top: random(80) + vw;
+				/* 				right: random(50) vw;
+				left: random(30) + vw; */
+				bottom: random(90) + vw;
+				background-color: rgb(random(255), random(255), random(255));
+			}
+		}
+	}
+}

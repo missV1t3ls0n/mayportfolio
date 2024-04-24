@@ -1,0 +1,186 @@
+@import '../../helpers/variables.scss';
+
+.menu-wrapper {
+	margin: 0px auto;
+	width: $container-width;
+	max-height: $header-height;
+	z-index: 90;
+	overflow: hidden;
+	cursor: pointer;
+
+	nav.menu {
+		display: flex;
+		height: $header-height;
+		margin-left: 150px;
+		max-width: fit-content;
+		top: 0;
+		cursor: pointer;
+
+		span {
+			cursor: pointer;
+			margin-top: 20px;
+			// color: white;
+			font-family: $font-logo;
+			font-weight: 400;
+			font-size: 18px;
+			text-align: left;
+
+			&.text {
+				margin-right: 10px;
+			}
+
+			& + div.chevrons-container {
+				width: 15px;
+				& > span.chevron-icon {
+					// border: 1px solid green;
+					height: 60px;
+
+					&.a {
+						fill: white;
+
+						& > svg {
+							transform: translate(0, -50px);
+						}
+					}
+					&.b {
+						fill: black;
+					}
+
+					& > svg {
+						margin-top: 0px;
+						width: 15px;
+						transition: transform 0.2s ease-in;
+
+						&.chevron-open-state {
+							transform: translate(0, 0px);
+							transform: rotate(0deg);
+
+							&.svg-a {
+								transform: rotate(-180deg);
+								transform: translate(0, 25px);
+
+								transition: 0.2s ease-in;
+								&:hover {
+									pointer-events: none;
+								}
+							}
+							&.svg-b {
+								&:hover {
+									pointer-events: none;
+								}
+							}
+						}
+					}
+				}
+				&:hover {
+					span.a > svg {
+						transform: translate(0, 25px);
+					}
+
+					span.b > svg {
+						transform: translate(0, 200px);
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-options-wrapper {
+	position: fixed;
+	z-index: 9999;
+	background-color: pink;
+
+	margin: 0px auto;
+	top: $header-height;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 0vh;
+	overflow: hidden;
+	transition: height 0.4s ease-in;
+
+	&.open {
+		z-index: 999999;
+		height: 100vh;
+		transition: height 0.4s ease-out;
+	}
+	.menu-options {
+		height: 100vh;
+		padding: 0px 150px;
+
+		// border: 5px solid green;
+		a {
+			text-decoration: none;
+
+			&.current-page > h4 {
+				width: 90px;
+				max-width: fit-content;
+				transition: all 0.4s ease-in;
+				border-style: solid;
+				border-width: 0px 0px 1px 0px;
+			}
+			h4 {
+				width: 0px;
+				margin-bottom: 5px;
+				color: white;
+				padding: 10px 0px;
+				font-family: $font-logo;
+
+				font-size: 18px;
+				font-weight: 400;
+				border-width: 0px 0px 0px 0px;
+
+				&:hover {
+					width: 90px;
+					max-width: fit-content;
+					transition: all 0.4s ease-in;
+					border-style: solid;
+					border-width: 0px 0px 1px 0px;
+
+					// margin-right: 15px;
+					// border: 1px solid red;
+				}
+			}
+
+			&.contact-menu-item {
+				h4 {
+					display: flex;
+					width: fit-content;
+					padding: 5px 5px;
+					margin-bottom: 5px;
+					// border-radius: 5px;
+					// border: 1px solid white;
+					&:hover {
+						background: white;
+						color: black;
+					}
+					&.gmail:hover {
+						&::after {
+							padding: 0px 5px;
+							content: ': mayvitelson@gmail.com';
+							font-size: 18px;
+						}
+					}
+
+					&.phone:hover {
+						&::after {
+							padding: 0px 5px;
+							content: ': 0549407589';
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+
+		hr {
+			border-bottom: 1px solid white;
+			border-left-style: none;
+			border-right-style: none;
+			border-top-style: none;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
+}

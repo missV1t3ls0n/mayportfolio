@@ -1,0 +1,17 @@
+@import "./helpers/loading_animation";
+
+@import "./helpers/reset.scss";
+@import "./helpers/variables.scss";
+@import "./helpers/utils.scss";
+
+@import "./components/header.scss";
+@import "./components/index/index.scss";
+@import "./components/about/about.scss";
+@import "./components/menu/menu.scss";
+@import "./components/illustration/illustration.scss";
+
+@import "./components/footer.scss";
+@import "./components/scrollbar.scss";
+@import "./helpers/contact.scss";
+
+@import "./components/components_media_queries.scss";
