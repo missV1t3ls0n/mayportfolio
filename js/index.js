@@ -251,7 +251,7 @@ window.addEventListener('scroll', (event) => {
 });
 
 const goToProjects = () => {
-	window.scrollTo({ top: isMobile ? 600 : 600, left: 0, behavior: "auto" });
+	window.scrollTo({ top: isMobile ? 600 : 500, left: 0, behavior: "auto" });
 	menuOptionsContainer.classList.remove('open');
 
 };
