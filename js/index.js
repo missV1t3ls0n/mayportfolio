@@ -263,6 +263,10 @@ const goToHome = () => {
 	window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 };
 
+const closeMenu = () => {
+	menuOptionsContainer.classList.remove('open');
+}
+
 const goToProjectsFromAboutPage = () => {
 	removeClassNameToElement(menuOptionsContainer, 'open');
 	window.localStorage.setItem("goToProjects", '1');
