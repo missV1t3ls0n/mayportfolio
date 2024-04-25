@@ -49,6 +49,7 @@ const hrArray = document.querySelectorAll('.menu-options-wrapper > hr');
 
 const projectsSection = document.getElementById("projectsSection");
 const homeSection = document.getElementById("homeSection");
+const aboutPage = document.getElementById("aboutPage");
 
 
 
@@ -263,8 +264,18 @@ const goToHome = () => {
 	window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 };
 
-const closeMenu = () => {
+const redirectToAbout = () => {
+	homeSection.classList.remove("current-page");
+	aboutPage.classList.add('current-page');
 	menuOptionsContainer.classList.remove('open');
+	location.href = './about.html';
+}
+
+const redirectToHome = () => {
+	aboutPage.classList.remove('current-page');
+	homeSection.classList.add("current-page");
+	menuOptionsContainer.classList.remove('open');
+	location.href = './index.html';
 }
 
 const goToProjectsFromAboutPage = () => {
