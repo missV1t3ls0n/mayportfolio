@@ -259,13 +259,16 @@ const goToProjects = () => {
 
 };
 
-const goToHome = () => {
+const scrollToHome = () => {
+	projectsSection.classList.remove('current-page');
+	homeSection.classList.add("current-page");
 	menuOptionsContainer.classList.remove('open');
 	window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 };
 
 const redirectToAbout = () => {
 	homeSection.classList.remove("current-page");
+	projectsSection.classList.remove('current-page');
 	aboutPage.classList.add('current-page');
 	menuOptionsContainer.classList.remove('open');
 	location.href = './about.html';
@@ -279,8 +282,10 @@ const redirectToHome = () => {
 }
 
 const goToProjectsFromAboutPage = () => {
+	aboutPage.classList.remove('current-page');
+	projectsSection.classList.add('current-page');
 	removeClassNameToElement(menuOptionsContainer, 'open');
 	window.localStorage.setItem("goToProjects", '1');
-	window.location.assign("./index.html");
+	location.href = "./index.html";
 }
 
