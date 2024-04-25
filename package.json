@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "sass --watch ./scss/main.scss ./dist/css/main.css",
+    "sass": "sass ./scss/main.scss ./dist/css/main.css",
     "build": "sass ./scss/main.scss ./dist/css/main.css"
   },
   "author": "",
