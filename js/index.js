@@ -212,6 +212,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	removeClassNameToElement(menuOptionsContainer, 'open');
 	isMobile = detectMob();
 	if (window.localStorage.getItem("goToProjects")) {
+		homeSection.classList.remove("current-page");
+		projectsSection.classList.add("current-page");
 		document.body.className = 'body-visible';
 		goToProjects()
 		window.localStorage.clear();
@@ -229,7 +231,7 @@ menuButton.addEventListener('click', (event) => {
 
 window.addEventListener('scroll', (event) => {
 	if (isIndexPage) {
-		if (window.pageYOffset > 599) {
+		if (window.pageYOffset >= 500) {
 			homeSection.classList.remove("current-page");
 			projectsSection.classList.add("current-page");
 		}
