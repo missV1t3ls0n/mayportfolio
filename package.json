@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss ./dist/css"
+    "sass": "sass --watch ./scss/main.scss ./dist/css/main.css",
+    "build": "sass ./scss/main.scss ./dist/css/main.css"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +13,7 @@
     "node": ">=19",
     "npm": ">=8"
   },
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2"
   }
