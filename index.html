@@ -13,7 +13,7 @@
 <body data-bg="#ffc0cb">
   <header>
     <div class="left-side-container">
-      <a href="./index.html"><span class="logo">May Vitelson</span></a>
+      <a href="/"><span class="logo">May Vitelson</span></a>
     </div>
     <div class="menu-wrapper">
       <nav class="menu  container">
@@ -82,13 +82,13 @@
     <section class="menu-options-wrapper container">
       <article class="menu-options" data-bg="#ffc0cb" data-fcolor="black">
         <hr />
-        <a id="homeSection" class="current-page" onclick="scrollToHome()">
+        <a id="homeNav" class="current-page">
           <h4>Home</h4>
         </a>
-        <a id="projectsSection" onclick="goToProjects()">
+        <a id="projectsNav">
           <h4>Projects</h4>
         </a>
-        <a id="aboutPage" onclick="redirectToAbout()">
+        <a id="aboutNav">
           <h4>About</h4>
         </a>
         <hr />
@@ -160,14 +160,14 @@
       </article>
     </section>
     <section class="works">
-      <article data-bg="#7085c1" class="tempe single-work">
+      <article data-bg="#7085c1" data-fcolor="black" class="tempe single-work">
         <h3 class="title">Tempe</h3>
         <div class="info">
           <div class="left">
             <div class="tags"> UX/UI Design, Single Page Application, Responsive Design, Graphic Assets, CSS Animations
             </div>
             <div class="single-work-link">
-              <a href="https://tempe-weather.herokuapp.com/" target="_blank">VISIT</a>
+              <a href="https://tempe-weather.herokuapp.com/" target="_blank" style="color:black">VISIT</a>
             </div>
           </div>
           <div class="right">
@@ -326,9 +326,7 @@
       </article>
     </section>
   </main>
-  <!-- <script src="./js/index-modules.js" type="module"></script> -->
-  <!-- <script nomodule src="./js/index.js"></script> -->
-  <script src="./js/index.js"></script>
+  <script type="module" src="./main.js"></script>
 
 </body>
 
