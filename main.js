@@ -1,3 +1,11 @@
+/*
+functionality is not working properly at dev branch,
+functionality in main branch (7e227b3) is perfect, need
+to compare to the main 7e227b3 code and make it behave the same 
+in here
+*/
+
+
 
 import { aboutPart1Section, aboutPart2Section } from "./js/aboutPageDom.js"
 
