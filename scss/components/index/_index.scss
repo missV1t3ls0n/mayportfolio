@@ -4,15 +4,8 @@ html {
   body {
     main.container {
       section.intro {
-        // border: 1px solid red;
-        // height: 100vh;
-        // border: 1px solid green;
         padding: 50px 150px;
         margin-top: $header-height + 100px;
-        // margin-bottom: 0px;
-        // height: fit-content;
-
-        // height: fit-content;
         article.intro-content {
           .scrollToProjectsArrow {
             height: 0px !important;
@@ -99,10 +92,11 @@ html {
         font-family: $h3-font;
         height: 100%;
         padding: 50px 150px;
-
+        // margin-top: $header-height + 100px;
         .single-work {
           // border: 1px solid green;
-          margin-bottom: 100px;
+          // margin-top:100px;
+          // margin-bottom: 100px;
           // padding: 50px 0px;
 
           // margin-bottom: 100vh;
@@ -146,7 +140,13 @@ html {
                 transform: translateY(50px);
               }
 
-              .single-work-link {
+              .single-work-link > a {
+                // text-decoration: underline;
+                // border:1px solid white;
+                // border:1px solid;
+                // border-radius: 13px;
+                // max-width: fit-content;
+                // max-height: fit-content;
               }
             }
             .right {

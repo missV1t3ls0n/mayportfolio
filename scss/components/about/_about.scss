@@ -91,17 +91,12 @@ section.about-part2 {
   margin-top: 100px;
   margin-bottom: 0px !important;
 
-  // margin-bottom: 100px;
   article {
-    // height: 20vh;
-
     display: flex;
-    // margin-bottom: 20px;
-
     .right {
       // border: 1px solid red;
 
-      padding: 10px;
+      // padding: 10px;
       width: 50%;
       .skills {
         margin-left: 200px;
@@ -198,7 +193,11 @@ section.about-part2 {
         }
 
         ul {
+          // display:flex;
+          // justify-content: start;
+
           li {
+            // min-width: 100%;
             font-family: $regular-font;
             font-size: 18px;
             margin: 30px 0px;

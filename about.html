@@ -79,18 +79,18 @@
 		<div class="right-side-container"></div>
 	</header>
 	<main class="container">
-		<section data-bg="#7a9fa8" class="menu-options-wrapper container" style="z-index: 100000;">
+		<section class="menu-options-wrapper container" style="z-index: 100000;">
 			<article class="menu-options" style="z-index: 100000;" data-bg="#7a9fa8" data-fcolor="white">
 				<hr />
-				<a id="homeSection" onclick="redirectToHome()">
+				<a id="homeNav">
 					<h4 class="menulink">Home</h4>
 				</a>
 
-				<a id="projectsSection" onclick="goToProjectsFromAboutPage()">
+				<a id="projectsNav">
 					<h4 class="menulink">Projects</h4>
 				</a>
 
-				<a id="aboutPage" class="current-page" href="./about.html" class="current-page">
+				<a id="aboutNav" class="current-page" href="./about.html" class="current-page">
 					<h4 class="menulink">About</h4>
 				</a>
 				<hr />
@@ -111,7 +111,7 @@
 			</article>
 		</section>
 		<section class="about-part1">
-			<article class="part1" data-bg="#ffc0cb">
+			<article class="part1" data-bg="#ffc0cb" data-fcolor="black">
 				<h3 class="fullname">MAY VITELSON</h3>
 				<div class="content-wrapper">
 					<div class="left">
@@ -176,8 +176,6 @@
 								</div>
 								<div class="city">Tel Aviv</div>
 							</li>
-						</ul>
-						<ul>
 							<li class="minshar">
 								<div class="name">Minshar College Of Art & Design</div>
 								<div class="field-of-study">Visual Communication Design</div>
@@ -210,9 +208,7 @@
 			</article>
 		</section>
 	</main>
-	<!-- <script src="./js/index-modules.js" type="module"></script> -->
-	<!-- <script nomodule src="./js/index.js"></script> -->
-	<script src="./js/index.js"></script>
+	<script type="module" src="./main.js"></script>
 
 </body>
 
