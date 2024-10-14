@@ -1,1 +1,2 @@
-### ©2020 UX/UI Design by myself (May Vitelson) | Development by Guy Vitelson (https://github.com/v1t3ls0n) 
+### ©2020 Development by myself (Guy Vitelson aka v1t3ls0n on GitHub) 
+### UX/UI Design by May Vitelson (aka missV1t3ls0n on GitHub)
